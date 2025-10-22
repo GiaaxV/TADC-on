@@ -94,3 +94,34 @@ yarn-error.*
 
 # typescript
 *.tsbuildinfo
+
+# Windows
+AppData/
+Documents/
+Downloads/
+Music/
+Pictures/
+Videos/
+Desktop/
+Favorites/
+Links/
+Saved Games/
+Searches/
+NTUSER.DAT*
+ntuser.dat*
+ntuser.ini
+
+# Browser data
+*.crdownload
+*.tmp
+
+# IDE
+.vscode/
+.cursor/
+.windsurf/
+.codeium/
+
+# System files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
