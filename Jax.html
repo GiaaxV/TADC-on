@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Circus - Jax Whack-a-Mole</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Minijuego 1: Jax (Whack-a-Mole) -->
+    <section id="screen-jax" class="screen game">
+        <div class="toolbar">
+            <button onclick="window.location.href='Minijuegos.html'" class="btn-back">⟵ Volver</button>
+        </div>
+        <header class="hud">
+            <div>Tiempo: <span id="jax-time">30</span>s</div>
+            <div>Puntos: <span id="jax-score">0</span></div>
+        </header>
+        <div id="jax-board" class="jax-board">
+            <!-- Agujeros alineados con los círculos negros de la imagen -->
+            <div class="hole" data-idx="0"></div>
+            <div class="hole" data-idx="1"></div>
+            <div class="hole" data-idx="2"></div>
+            <div class="hole" data-idx="3"></div>
+            <div class="hole" data-idx="4"></div>
+            <div class="hole" data-idx="5"></div>
+            <div id="jax-target" class="jax"></div>
+        </div>
+        <div id="jax-result" class="result" hidden>
+            <div class="result__row">
+                <div class="sprite sprite--jax sprite--lg"></div>
+                <div class="result__text" id="jax-result-text"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="jax-game.js"></script>
+</body>
+</html>

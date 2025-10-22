@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Circus - Pomni Feeding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Minijuego 2: Pomni (Alimentarla) -->
+    <section id="screen-pomni" class="screen game">
+        <div class="toolbar">
+            <button onclick="window.location.href='Minijuegos.html'" class="btn-back">⟵ Volver</button>
+        </div>
+        <header class="hud">
+            <div>Tiempo: <span id="pomni-time">30</span>s</div>
+            <div>Felicidad: <span id="pomni-meter">50</span></div>
+        </header>
+        <div class="pomni-area">
+            <div id="pomni" class="pomni" title="Pomni"></div>
+            <div id="food" class="food" draggable="true" title="Comida"></div>
+        </div>
+        <div id="pomni-result" class="result" hidden>
+            <div class="result__row">
+                <div class="sprite sprite--pomni sprite--lg"></div>
+                <div class="result__text" id="pomni-result-text"></div>
+            </div>
+        </div>
+        <p class="hint">Arrastra la comida hasta Pomni para alimentarla. ¡Cada alimentación exitosa aumenta su felicidad en 10 puntos!</p>
+    </section>
+
+    <script src="pomni-game.js"></script>
+</body>
+</html>

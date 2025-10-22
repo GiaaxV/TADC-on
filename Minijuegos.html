@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Circus - Minijuegos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <!-- Selección de Minijuego -->
+    <section id="screen-minigames" class="screen panel">
+        <div class="toolbar">
+            <button onclick="window.location.href='index.html'" class="btn-back">⟵ Volver</button>
+        </div>
+        <h2 class="panel__title">Selecciona un Minijuego</h2>
+        <div class="minigame-list">
+            <div class="minigame-card">
+                <div class="sprite sprite--jax"></div>
+                <h3>Jax – Whack-a-Mole</h3>
+                <p class="minigame-card__desc">
+                    Haz clic sobre Jax cuando aparezca. Dura 30s. ¡Sé rápido!
+                </p>
+                <button onclick="window.location.href='Jax.html'" class="btn-primary">Iniciar</button>
+            </div>
+            <div class="minigame-card">
+                <div class="sprite sprite--pomni"></div>
+                <h3>Pomni – Alimentarla</h3>
+                <p class="minigame-card__desc">
+                    Arrastra la comida hacia Pomni para subir la felicidad. Evita soltarla fuera.
+                    Dura 30s.
+                </p>
+                <button onclick="window.location.href='Pomni.html'" class="btn-primary">Iniciar</button>
+            </div>
+        </div>
+        
+        <!-- Secciones adicionales -->
+        <div class="lobby-grid" style="margin-top: 40px;">
+            <button onclick="window.location.href='History.html'" class="card">
+                <h2>Historia</h2>
+                <p>Descubre el trasfondo</p>
+            </button>
+            <button onclick="window.location.href='Personajes.html'" class="card">
+                <h2>Personajes</h2>
+                <p>Conoce al elenco</p>
+            </button>
+        </div>
+    </section>
+</body>
+</html>
+
