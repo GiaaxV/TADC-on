@@ -45,7 +45,7 @@ function runLoading() {
                 startButton.addEventListener('click', () => {
                     playBeep(800, 120, 'square');
                     // Ir a Minijuegos.html
-                    window.location.href = 'html/Minijuegos.html';
+                    window.location.href = 'Minijuegos.html';
                 });
             }
         }
