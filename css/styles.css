@@ -126,7 +126,7 @@ body {
   max-width: 1000px; 
   height: clamp(600px, 85vh, 1000px); 
   margin: 0 auto; 
-  background: url('../images/imm.png') center/cover no-repeat;
+  background: url('../images/imk.png') center/cover no-repeat;
   border: 2px solid #ffffff22; 
   border-radius: 16px; 
   overflow: hidden; 
