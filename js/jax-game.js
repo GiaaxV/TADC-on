@@ -58,6 +58,13 @@ function startJaxGame() {
         jaxScore += 1;
         document.getElementById('jax-score').textContent = String(jaxScore);
         playBeep(1000, 80, 'sine');
+        
+        // Cambiar a sprite de click
+        target.classList.add('clicked');
+        setTimeout(() => {
+            target.classList.remove('clicked');
+        }, 200); // Volver al sprite normal después de 200ms
+        
         moveJax();
     }
 
@@ -89,6 +96,13 @@ function startJaxGame() {
         const resText = document.getElementById('jax-result-text');
         resText.textContent = `${isRecord ? '¡Nuevo récord!' : '¡Buen trabajo!'} Puntaje: ${jaxScore}${isRecord ? '' : ` | Mejor: ${bestPrev}`}`;
         res.hidden = false;
+        
+        // Mostrar sprite de victoria en el resultado
+        const resultSprite = res.querySelector('.sprite--jax');
+        if (resultSprite) {
+            resultSprite.classList.add('victory');
+        }
+        
         playBeep(isRecord ? 1200 : 300, 260, isRecord ? 'square' : 'sawtooth');
     }, GAME_DURATION_MS);
 }
