@@ -152,7 +152,7 @@ body {
   position: absolute; 
   width: 70px; 
   height: 70px; 
-  background: url('../images/Jax.png') no-repeat;
+  background: url('/images/Jax.png') no-repeat;
   background-size: 210px 70px; /* 3 sprites horizontales */
   background-position: 0 0; /* Primer sprite por defecto */
   border: 4px solid #ff0000; /* Borde rojo temporal para debug */
