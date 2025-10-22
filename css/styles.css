@@ -152,9 +152,9 @@ body {
   position: absolute; 
   width: 70px; 
   height: 70px; 
-  background: url('../Jax.png') no-repeat;
-  background-size: 210px 70px; /* 3 sprites horizontales */
-  background-position: 0 0; /* Primer sprite por defecto */
+  background: url('../j1.png') no-repeat;
+  background-size: 70px 70px; /* Tamaño de la imagen individual */
+  background-position: center; 
   border: 4px solid #ffffff; 
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7), 0 0 20px rgba(255, 209, 102, 0.5); 
   transform: translate(-50%, -50%); 
@@ -164,19 +164,23 @@ body {
 
 /* Sprite cuando se hace click */
 .jax.clicked {
-  background-position: -70px 0; /* Segundo sprite */
+  background: url('../j2.png') no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
 }
 
 /* Sprite de victoria */
 .jax.victory {
-  background-position: -140px 0; /* Tercer sprite */
+  background: url('../j3.png') no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
 }
 
 /* Sprite de victoria en el resultado */
 .sprite--jax.victory {
-  background: url('../Jax.png') no-repeat;
-  background-size: 210px 70px;
-  background-position: -140px 0; /* Tercer sprite */
+  background: url('../j3.png') no-repeat;
+  background-size: 70px 70px;
+  background-position: center;
 }
 .jax:active { transform: translate(-50%, -50%) scale(.95); }
 
