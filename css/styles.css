@@ -101,7 +101,11 @@ body {
 
 .characters { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 16px; }
 .sprite { width: 96px; height: 96px; border-radius: 50%; margin: 12px auto; border: 3px solid #ffffff55; box-shadow: 0 8px 20px #00000044, inset 0 0 12px #ffffff22; }
-.sprite--jax { background: radial-gradient(circle at 35% 35%, #ffd166, #ff7b00); }
+.sprite--jax { 
+  background: url('../images/Jax.png') no-repeat;
+  background-size: 210px 70px;
+  background-position: 0 0; /* Primer sprite por defecto */
+}
 .sprite--pomni { background: radial-gradient(circle at 35% 35%, #c77dff, #7209b7); }
 .sprite--kaufmo { background: radial-gradient(circle at 35% 35%, #7effa1, #00c853); }
 .sprite--ragatha { background: radial-gradient(circle at 35% 35%, #6ea8ff, #005bb5); }
